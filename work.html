@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+    }
+
+    table {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .img-box img {
+        margin: auto;
+        width: 750px;
+        height: 500px;
+        padding: 10px;
+    }
+
+    .btn {
+        border: none;
+        outline: none;
+        background: darkgoldenrod;
+        padding: 10px 30px;
+        font-size: 20px;
+        color: #ddd;
+        cursor: pointer;
+        margin: 10px 30px;
+    }
+
+    .btn:hover {
+        background: #111;
+    }
+
+</style>
+
+<body>
+    <header>
+        <div class="loga">
+            <img>
+        </div>
+    </header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+
+            <a href="index.html" class="active">Home</a>
+            <a href="work.html">Work</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+        </div>
+    </nav>
+
+    <main>
+        <br>
+        <div class="ring">
+            <div class="ico3"><img src="Images/Buttons/Portfolio.png"></div>
+            <table class="wotbl">
+                <tr>
+                    <td class="work">
+                        <div class="w1234"><a href="#graphicpage"><img src="images/profile/Graphic.jpg"></a></div>
+
+                    </td>
+                    <td class="work">
+                        <div class="w1234"><a href="#videopage"><img src="images/profile/Video.jpg"></a></div>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="work">
+                        <div></div>
+                        <div class="w1234"><a href="#animpage"><img src="images/profile/Animation.jpg"></a></div>
+
+                    </td>
+                    <td class="work">
+                        <div class="w1234"><a href="#artpage"><img src="images/profile/Artwork.jpg"></a></div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------->
+        <div>
+            <div class="gra">
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h1 id="graphicpage" class="ttl-g">GRAPHIC</h1>
+                </div>
+                <br>
+                <br>
+                <table>
+                    <tr class="img-box">
+                        <td><img src="images/Graphics/1.jpg" class="slider-img"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center"><button class="btn" onclick="prev()">Prev</button>
+                            <button class="btn" onclick="next()">Next</button>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <script src="graphics.js"></script>
+                <br>
+                <br>
+                <br>
+                <div style="text-align: center"><a href="#top">Back to top of page</a></div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+        <div class="vid">
+            <br>
+            <br>
+            <br>
+            <div>
+                <h1 id="videopage" class="ttl-g">VIDEO</h1>
+            </div>
+            <br>
+            <br>
+            <table>
+                <tr>
+                    <td><iframe width="90%" height="559" src="https://www.youtube.com/embed/fTfZa_DjSEU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="text-align: center"><a href="#top">Back to top of page</a></div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+        <div class="aniht">
+            <br>
+            <br>
+            <br>
+            <div>
+                <h1 id="animpage" class="ttl-g">ANIMATION</h1>
+            </div>
+            <br>
+            <br>
+            <table class="ani">
+                <tr>
+                    <td><img src="images/Animation/Wall-clock.gif"></td>
+                    <td><img src="images/Animation/Hammer.gif"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/Animation/UFO.gif"></td>
+                    <td><img src="images/Animation/Steelball.gif"></td>
+                </tr>
+                <tr>
+                    <td><img src="images/Animation/Water-mill.gif"></td>
+                    <td><img src="images/Animation/Rolling-balls.gif"></td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="text-align: center"><a href="#top">Back to top of page</a></div>
+            <br>
+            <br>
+        </div>
+        <!------------------------------------------------------------------------------------------------------->
+        <div>
+            <div class="vid">
+                <br>
+                <br>
+                <br>
+                <div>
+                    <h1 id="artpage" class="ttl-g">ARTWORK</h1>
+                </div>
+                <br>
+                <br>
+                <table>
+                    <tr class="img-box">
+                        <td><img src="images/Artworks/1.jpg" class="slider-img"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center"><button class="btn" onclick="prev()">Prev</button>
+                            <button class="btn" onclick="next()">Next</button>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <script src="artworks.js"></script>
+                <br>
+                <br>
+                <div style="text-align: center"><a href="#top">Back to top of page</a></div>
+                <br>
+            </div>
+        </div>
+    </main>
+    <!--------------------------------------------------------------------------------------------->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+    </script>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+
+        <div class="footer-newsletter">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <h4>Join Our Newsletter</h4>
+                        <p>Type your email address in the box below and hit subscribe for our news letter</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <table>
+                        <tr class="col-lg-3 col-md-6 footer-contact">
+                            <td>
+
+                                <h3>DALEFOLIO</h3><br>
+                                <p>
+                                    6614 Woodside Ave <br>
+                                    Woodside, NY 11377<br>
+                                    United States <br><br>
+                                    <strong>Phone:</strong> +1 8DA LEF OLIO<br>
+                                    <strong>Email:</strong> info@dalefolio.com<br>
+                                </p>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul class="lnk">
+                                    <li><a href="work.html">Work</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Services</h4>
+                                <ul class="srvs">
+                                    <li>Graphic Design</li>
+                                    <li>Video Editing</li>
+                                    <li>Motion Graphics</li>
+                                    <li>Web Design</li>
+                                </ul>
+                            </td>
+                            <td class="col-lg-3 col-md-6 footer-links">
+                                <h4>Our Social Networks</h4>
+                                <p>You can follow us on for designs through one of the below social media apps</p><br>
+                                <div class="social-links mt-3">
+                                    <a href="https://www.facebook.com/"><img src="SocialIcons/facebook.png"></a>
+                                    <a href="https://www.twitter.com/"><img src="SocialIcons/twitter.png"></a>
+                                    <a href="https://www.instagram.com/"><img src="SocialIcons/instagra,.png"></a>
+                                    <a href="https://www.linkedin.com/"><img src="SocialIcons/linkedIn.png"></a>
+                                </div>
+                            </td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom clearfix">
+            <div class="copyright">
+                <span>Dalefolio</span> &copy; Copyright 2021 <strong></strong>. All Rights Reserved
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+</body>
+
+</html>
